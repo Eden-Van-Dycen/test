@@ -1,0 +1,151 @@
+*,
+::before,
+::after {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+
+.wrapper {
+  width: 1200px;
+}
+
+.arrow {
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: fixed;
+  right: 0px;
+  bottom: 0;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 40px;
+}
+
+.main_title {
+  font-size: 36px;
+  transition: all 2s ease .2s;
+  border-radius: 30px;
+  padding: 0 auto;
+}
+
+.main_title::before,
+.main_title::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+}
+
+.main_title::after {
+  content: '';
+  right: 0;
+  left: auto;
+}
+
+.main_title:hover {
+  color: blue;
+  text-decoration: underline;
+  background-color: black;
+  color: white;
+}
+
+.main_title_text:hover {
+  background-color: red;
+  text-decoration: underline;
+  transform: 1s;
+  transition: all 3s;
+}
+
+.main_title_text {
+  margin-bottom: 40px;
+  font-size: 20px;
+  background-color: #776f6f;
+  margin: 30px 0px;
+  padding: 20px 35px;
+  border: 3px solid red;
+  height: 400px;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.box {
+
+  height: 500px;
+  background-color: gray;
+  border: 2px solid black;
+  margin-top: 20px;
+  position: relative;
+}
+
+.text_text {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.sekond_title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.sekond_title_text {
+  font-size: 20px;
+  background-color: #776f6f;
+  padding: 20px 35px;
+  margin: 30px 0;
+}
+
+.text_after_sekond_sektion-1 {
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.text_after_sekond_sektion-2 {
+  color: rgb(152, 236, 236);
+  text-align: right;
+  font-size: 14px;
+  background-color: rgba(113, 48, 48, .8);
+  margin: 20px 0 30px;
+}
+
+.list {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.list_item {
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+.imege_1 {
+  transition: all 1.5s ease .1s ;
+border-radius: 20px;
+}
+
+.imege_1:hover {
+  transform: translate(0, -100px );
+  
+}

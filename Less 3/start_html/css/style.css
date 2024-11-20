@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  min-height: 100vh;
+}
+
+.header {
+  padding-top: 35px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 166px;
+}
+
+.logo_img {
+  margin: 0 0;
+}
+
+.menu {
+  margin: 0 0;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu a {
+  font-family: var(--font-family) sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+
+.menu li+li {
+  margin-left: 30px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 112px;
+  color: #fff;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.slick-dots button {
+  background-color: #7A3D1C;
+  border: 2px solid #FDD486;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  border-radius: 50%;
+}
