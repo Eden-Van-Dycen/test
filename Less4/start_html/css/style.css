@@ -50,7 +50,6 @@ select {
 
 a[class] {
   text-decoration: none;
-  color: inherit;
 }
 
 /* font-family: "Merriweather", serif; */
@@ -387,6 +386,37 @@ body {
 .portfolio__item img {
   width: 100%;
   margin-bottom: 22px;
+}
+
+.portfolio__item {
+  position: relative;
+}
+
+.portfolio__item-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+  background-color: #4C4949;
+  border: 12px solid #7C7A7A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.portfolio__item-link:hover {
+  opacity: 1;
+
 }
 
 .portfolio__add {
